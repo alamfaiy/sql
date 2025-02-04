@@ -2,7 +2,7 @@
 
 /* SECTION 2 */
 
-
+-- NAME: FAIYZA ALAM
 
 -- COALESCE
 
@@ -641,3 +641,4 @@ SET current_quantity = COALESCE((
 SELECT * FROM product_units
 
 </sql><current_tab id="0"/></tab_sql></sqlb_project>
+
