@@ -1,4 +1,5 @@
 # Assignment 2: Design a Logical Model and Advanced SQL
+# NAME: Faiyza Alam
 
 🚨 **Please review our [Assignment Submission Guide](https://github.com/UofT-DSI/onboarding/blob/main/onboarding_documents/submissions.md)** 🚨 for detailed instructions on how to format, branch, and submit your work. Following these guidelines is crucial for your submissions to be evaluated correctly.
 
@@ -14,10 +15,10 @@
     * Open a private window in your browser. Copy and paste the link to your pull request into the address bar. Make sure you can see your pull request properly. This helps the technical facilitator and learning support staff review your submission easily.
 
 Checklist:
-- [ ] Create a branch called `assignment-two`.
-- [ ] Ensure that the repository is public.
-- [ ] Review [the PR description guidelines](https://github.com/UofT-DSI/onboarding/blob/main/onboarding_documents/submissions.md#guidelines-for-pull-request-descriptions) and adhere to them.
-- [ ] Verify that the link is accessible in a private browser window.
+- [x] Create a branch called `assignment-two`.
+- [x] Ensure that the repository is public.
+- [x] Review [the PR description guidelines](https://github.com/UofT-DSI/onboarding/blob/main/onboarding_documents/submissions.md#guidelines-for-pull-request-descriptions) and adhere to them.
+- [x] Verify that the link is accessible in a private browser window.
 
 If you encounter any difficulties or have questions, please don't hesitate to reach out to our team via our Slack. Our Technical Facilitators and Learning Support staff are here to help you navigate any challenges.
 
@@ -45,8 +46,12 @@ There are several tools online you can use, I'd recommend [Draw.io](https://www.
 
 **HINT:** You do not need to create any data for this prompt. This is a conceptual model only. 
 
+Done. See diagram. 
+
 #### Prompt 2
 We want to create employee shifts, splitting up the day into morning and evening. Add this to the ERD.
+
+Done. See diagram. 
 
 #### Prompt 3
 The store wants to keep customer addresses. Propose two architectures for the CUSTOMER_ADDRESS table, one that will retain changes, and another that will overwrite. Which is type 1, which is type 2? 
@@ -54,7 +59,7 @@ The store wants to keep customer addresses. Propose two architectures for the CU
 **HINT:** search type 1 vs type 2 slowly changing dimensions. 
 
 ```
-Your answer...
+See my diagram. For customer_address_type_1, an entry gets re-written if the entry is updated. For customer_address_type_2, all customer addresses get a start date. If a customer moves, their previous entry gets an end date and a new entry is created with a new start date. 
 ```
 
 ***
@@ -182,5 +187,13 @@ Consider, for example, concepts of labour, bias, LLM proliferation, moderating c
 
 
 ```
-Your thoughts...
+Another fascinating read. What comes immedietly to mind is the harvard implicit association test (https://implicit.harvard.edu/implicit/takeatest.html) which tests for one's implicit biases in certain topics (e.g. race, gender, class) by getting the player to sort images or words into categories very quickly. The hypothesis is that some associations are easier than others, which says something about the underlying bias one has. Since much of the work sorting/training images for ImageNet was manual, and probably very fast as suggested by the Mechanical Turk section, it is very easy for implicit biases to sneak into the underlying training. While this may not be so much of an ethical issue when it comes to deciding whether or not something is a hot dog (though the great "is it a hot dog or a sandwich?" debate rages on), it becomes more insidious when labeling things like poeple's faces, as alluded to near the end of the article. 
+
+We don't always think of these biases when working with AI models, because we cannot see that there is an underlying human labor element underneath it all. In other words, we've removed the human from AI, and thus tend to view AI as a neutral entity. This is problematic because it can lead to a falsely inflated trust in these systems, viewing them as "above" human bias and judgement when the opposite is in fact true -- these systems are very prone to errors. This increased trust in AI leads also to a decreased trust in one's own judgement. I see this a lot in students who are relying more and more heavily on AI over their own judgement. It is this latter piece that is most important; yes, students will use AI because an easier solution is more tempting than putting in the work. But this is coming at a cost to them trusting themselves (interesting as many of these AI models are training on the judgement of a real human), which can in turn make them more susceptible to propaganda or false information, among other things. I think it is indeed an ethical issue that must be combated with more education on the underlying biases of AI as well as the fact that it is prone to errors.
+
+This erasure of the underlying human labour/biases and treating AI as a neutral identity is particularly problematic in the medical field. Early studies in the medical field were mostly focused on Caucaisan males -- these models were not generalizable to women and other diverse populations. AI moved so fast that these models were already beginning to be pushed into use in the medical field (I am thinking particularly MRI imaging as this is my field), so at the most recent MRI conference I went to there was an urgent call for regulation of these models because this became an ethical issue. We would not be operating at the peak standard of care for women and other diverse populations. 
+
+We also forget that AI models, such as chatgpt, do not simply exist in the intangible world of the internet. There are real world impacts to using AI, specifically energy expenditure. I've heard that every inquiry uses "a fishbowl's worth of water". I have seen people think that AI can solve issues of third world countries. However, at the MRI conference I went to, it was stated that AI is not a solution to these countries because why would they waste water resources on it when their people are already struggling with drinking water? It was something I had not considered, and I realized that this was because all the labour underneath that AI model was completely invisible to me. 
+ 
+To summarize the above, the main ethical issues I see that were addressed in the article have their foundations primarily in underlying biases that are not visible which have wide-reaching effects, as well as the invisible labour and real-world impact that contributed to the creation and continues to contribute to the use of these models. 
 ```
