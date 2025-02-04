@@ -454,7 +454,7 @@ CROSS JOIN
 
     customer))
 
-GROUP BY product_id
+GROUP BY product_id;
 
 
 
